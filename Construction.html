@@ -262,12 +262,7 @@
         float: none; /* Disable floating for mobile */
     }
 
-    .image-container img {
-        width: 200%; /* Ensure the image takes up the full width */
-        height: auto; /* Maintain aspect ratio */
-        float: none; /* Ensure no floating */
-    }
-            
+    .image-container img, 
     .image-container2 img, 
     .image-container3 img, 
     .image-container4 img, 
@@ -279,7 +274,15 @@
         height: auto; /* Maintain aspect ratio */
         float: none; /* Ensure no floating */
     }
-    .image-container, 
+    .image-container {
+        transform: scale (1.5); /* Zoom the container */
+        transform-origin: center center; /* Ensure the zoom is centered */
+        overflow: hidden; /* Hide any overflowed image parts */
+        width: 100%; /* Make each container take full width */
+        margin: 10px 0; /* Add some space between sections */
+        float: none; /* Disable floating for mobile */
+    }
+
     .image-container2, 
     .image-container3, 
     .image-container4, 
@@ -295,10 +298,11 @@
         font-size: larger;
     }
 
-    .image-container img, 
+    .image-container img {
         width: 200%; /* Ensure the image takes up the full width */
         height: auto; /* Maintain aspect ratio */
         float: none; /* Ensure no floating */
+    }
     .image-container2 img, 
     .image-container3 img, 
     .image-container4 img, 
