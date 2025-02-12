@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgba(7, 7, 31, 0.366);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            position: relative;
+        }
+
+       
+
+
+        .containerr {
+            transition: opacity 0.5s;
+            cursor: default;
+            margin-top: 300px;
+
+        }
+
+       
+
+        .kunstverein {
+            transition: opacity 0.5s;
+            cursor: default;
+            margin-top: 200px;
+
+        }
+
+
+        .kunstverein2 {
+            transition: opacity 0.5s;
+            cursor: default;
+            margin-top: 300px;
+
+        }
+
+        .kunstverein3 {
+            transition: opacity 0.5s;
+            cursor: default;
+            margin-top: 300px;
+
+        }
+
+        .kunstverein4 {
+            transition: opacity 0.5s;
+            cursor: default;
+            margin-top: 300px;
+            margin-bottom: 300px;
+
+        }
+
+        .containerbio {
+            transition: opacity 0.5s;
+            cursor: default;
+
+        }
+
+        .bio {
+            text-align: left;
+            font-size: larger;
+            font-weight: 700;
+            margin-top: 90px; /* Indicate interactivity */
+        }
+
+        .bio a {
+            color: black;
+        }
+
+        .bio:hover a {
+    cursor: crosshair; /* Changes to hand cursor on hover */
+    
+}
+
+        .interbio {
+            text-align: left;
+            font-size: larger;
+            font-weight: 700;
+            margin-top: 90px;
+        }
+
+        .hello {
+            display: none;
+            font-size: larger;
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            position: absolute;
+            top:50%;
+            left: 55%;
+            transform: translate(-30%, -50%);
+            transition: width 0.5s ease, opacity 0.5s ease; /* Transition width and opacity */
+            text-align: justify;
+            line-height: 1.2;
+        }
+
+        .text {
+            display: none;
+            font-size: 1.25rem;
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            position: absolute;
+            top:35%;
+            left: 55%;
+            transform: translate(-30%, -50%);
+            width: 900px; /* Initially no width */
+            transition: width 0.5s ease, opacity 0.5s ease; /* Transition width and opacity */
+            text-align: justify;
+            line-height: 1.2;
+        }
+
+        .contact {
+            font-size: larger;
+            font-weight: bolder;
+            text-align: left;
+            margin-top: 450px; /* Reset margin-top to avoid issues */
+        }
+
+        .ideology {
+            margin-top: 300px; /* Reset margin-top to avoid issues */
+        }
+
+
+
+
+        /* Hide everything in the container and show HELLO */
+        .containerbio:hover .text {
+            display: block; /* Show HELLO when containerbio is hovered */
+        }
+
+        .image-container {
+            display: none;
+            float: right; /* Align image to the left */
+            margin-top: 100px;
+            
+        }
+
+        .image-container img {
+         width: 450px; /* Adjust the width to make the image smaller */
+
+        }
+
+        .milica{
+            display: none;
+            float: right; /* Align image to the left */
+            margin-top: 20px;
+        }
+
+        .milica img {
+         width: 450px; /* Adjust the width to make the image smaller */
+
+        }
+
+
+        .mar{
+            display: none;
+            float: right; /* Align image to the left */
+            margin-top: 70px;
+        }
+
+        .mar img {
+         width: 450px; /* Adjust the width to make the image smaller */
+
+        }
+
+        .image-containerr {
+            display: none;
+            float: right; /* Align image to the left */
+        }
+
+        .image-containerr img {
+         width: 450px; /* Adjust the width to make the image smaller */
+
+        }
+
+        .actress {
+            display: none;
+            float: right; /* Align image to the left */ 
+            margin-top: 100px;
+        }
+
+        .actress img {
+         width: 450px; /* Adjust the width to make the image smaller */
+
+        }
+
+        .eli {
+            display: none;
+            float: right; /* Align image to the left */ 
+            margin-top: 100px;
+        }
+
+        .eli img {
+         width: 450px; /* Adjust the width to make the image smaller */
+
+        }
+
+        .baldi {
+            display: none;
+            float: right; /* Align image to the left */ 
+            margin-top: 100px;
+        }
+
+        .baldi img {
+         width: 450px; /* Adjust the width to make the image smaller */
+
+        }
+
+        .alma {
+            display: none;
+            float: right; /* Align image to the left */ 
+            margin-top: 100px;
+        }
+
+        .alma img {
+         width: 450px; /* Adjust the width to make the image smaller */
+
+        }
+
+
+        .figcaption {
+           font-size: 0.6rem; /* Adjust font size as needed */
+        }
+
+        .figcaptionmilica {
+           font-size: 0.6rem; /* Adjust font size as needed */
+        }
+
+        .figcaptionmar{
+           font-size: 0.6rem; /* Adjust font size as needed */
+        }
+
+        .figcaptionn {
+           font-size: 0.6rem; /* Adjust font size as needed */
+        }
+       
+        .outdoors:hover a {
+            cursor: crosshair;
+
+        }
+
+        .ideology:hover a {
+            cursor: crosshair;
+
+        }
+
+        .light:hover a {
+            cursor: crosshair;
+
+        }
+
+        .light:hover {
+            cursor: crosshair;
+
+        }
+
+        .light:hover .milica {
+          display: block;
+
+        }
+
+        .ideology:hover {
+            cursor: crosshair;
+
+        }
+
+        .ideology:hover .mar {
+          display: block;
+
+        }
+
+
+       
+
+
+
+        .containerbio:hover .image-container {
+            display: block;
+        
+        }
+
+        .containerr:hover .image-containerr {
+            display: block;
+        
+        }
+
+        .kunstverein:hover .actress {
+            display: block;
+        
+        }
+
+        .kunstverein2:hover .eli {
+            display: block;
+        
+        }
+
+        .kunstverein3:hover .baldi {
+            display: block;
+        
+        }
+
+        .kunstverein4:hover .alma {
+            display: block;
+        
+        }
+
+        
+
+      @media screen and (max-width: 768px) {
+    .bio {
+        display: block;
+        margin-top: 100px; /* Add spacing for the "Biography" heading */
+        text-align: left; /* Center-align the heading */
+        opacity: 1;
+       
+    }
+
+    .light {
+        margin-top: 100px;
+    }
+
+    .interbio {
+        display: block;
+        margin-top: 200px; /* Add spacing for the "Biography" heading */
+        text-align: left; /* Center-align the heading */
+        color: blue;
+        opacity: 1;
+    }
+
+    .contact {
+        display: block;
+        bottom: 0;
+        margin-top: 100px; /* Add spacing for the "Biography" heading */
+        text-align: left; /* Center-align the heading */
+        opacity: 1;
+    }
+
+    .containerr {
+        margin-top: 700px;
+    }
+
+    .kunstverein {
+        margin-top: 100px;
+    }
+
+    .kunstverein2 {
+        margin-top: 600px;
+    }
+
+    .kunstverein3 {
+        margin-top: 600px;
+    }
+
+    .kunstverein4 {
+        margin-top: 600px;
+    }
+
+    .containerbio {
+        margin-top: 200px;
+    }
+
+
+    .twinty {
+        margin-top: 900px;
+    }
+
+    .image-container {
+        display: block; /* Ensure the image is visible */
+        margin: 20px auto; /* Center the image */
+        text-align: left; /* Center-align the image */
+        width: 100%;
+        opacity: 1;
+    }
+
+    .image-container img {
+        width: 100%; /* Make the image responsive */
+        max-width: 300px; /* Limit the max width for better display */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .image-containerr {
+        display: block; /* Ensure the image is visible */
+        margin: 20px auto; /* Center the image */
+        text-align: left; /* Center-align the image */
+        width: 100%;
+        opacity: 1;
+    }
+
+    .image-containerr img {
+        width: 100%; /* Make the image responsive */
+        max-width: 300px; /* Limit the max width for better display */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .actress {
+        display: block; /* Ensure the image is visible */
+        margin: 20px auto; /* Center the image */
+        text-align: left; /* Center-align the image */
+        width: 100%;
+        opacity: 1;
+    }
+
+    .actress img {
+        width: 100%; /* Make the image responsive */
+        max-width: 300px; /* Limit the max width for better display */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .eli {
+        display: block; /* Ensure the image is visible */
+        margin: 20px auto; /* Center the image */
+        text-align: left; /* Center-align the image */
+        width: 100%;
+        opacity: 1;
+    }
+
+    .eli img {
+        width: 100%; /* Make the image responsive */
+        max-width: 300px; /* Limit the max width for better display */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .milica {
+        display: block; /* Ensure the image is visible */
+        margin: 20px auto; /* Center the image */
+        text-align: left; /* Center-align the image */
+        width: 100%;
+        opacity: 1;
+    }
+
+    .milica img {
+        width: 100%; /* Make the image responsive */
+        max-width: 300px; /* Limit the max width for better display */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .mar {
+        display: block; /* Ensure the image is visible */
+        margin: 20px auto; /* Center the image */
+        text-align: left; /* Center-align the image */
+        width: 100%;
+        opacity: 1;
+    }
+
+    .mar img {
+        width: 100%; /* Make the image responsive */
+        max-width: 300px; /* Limit the max width for better display */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .baldi {
+        display: block; /* Ensure the image is visible */
+        margin: 20px auto; /* Center the image */
+        text-align: left; /* Center-align the image */
+        width: 100%;
+        opacity: 1;
+    }
+
+    .baldi img {
+        width: 100%; /* Make the image responsive */
+        max-width: 300px; /* Limit the max width for better display */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .alma {
+        display: block; /* Ensure the image is visible */
+        margin: 20px auto; /* Center the image */
+        text-align: left; /* Center-align the image */
+        width: 100%;
+        opacity: 1;
+    }
+
+    .alma img {
+        width: 100%; /* Make the image responsive */
+        max-width: 300px; /* Limit the max width for better display */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .text {
+        display: block; /* Ensure the text is visible */
+        font-size: larger; /* Adjust font size for readability */
+        text-align: left; /* Align text for natural reading */
+        margin: 20px 0; /* Add spacing between image and text */
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove transformations */
+        width: auto; /* Allow natural width */
+        font-weight: bolder;
+        line-height: 1.3;
+        opacity: 1;
+    }
+
+    .pprojects { 
+        margin-top: 500px;
+
+    }
+
+    .hello {
+        display: block; /* Ensure the text is visible */
+        font-size: larger; /* Adjust font size for readability */
+        text-align: left; /* Align text for natural reading */
+        margin: 20px 0; /* Add spacing between image and text */
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove transformations */
+        width: auto; /* Allow natural width */
+        font-weight: bolder;
+        line-height: 1.3;
+        opacity: 1;
+    }
+
+    .contact {
+        display: block;
+        margin-top: 100px; /* Adjust spacing for smaller screens */
+        text-align: left; /* Ensure alignment matches the design */
+        opacity: 1;
+    }
+
+    .figcaptionn{
+        margin-bottom: 300px;
+    }
+
+
+}
+
+        
+    </style>
+</head>
+<body> 
+    
+   
+        
+    <div class="containerabout">
+        <div class="title-english">
+            <h1>Projects</h1>
+        </div>
+    </div>
+
+    <p style="margin-top: 100px; font-size: larger;color: white; cursor: default;font-weight: bolder;">Teaching (2024/25)</p>
+
+    <div class="light">
+      <div style="display: inline-block;">
+        <p style="margin-top: 50px; font-size: larger; font-weight: bolder;">
+          <a href="https://izk.tugraz.at/semesters/winter-semester-2024-2025/light-squared-as-soon-as-i-open-my-eyes-i-see-a-film/" style="text-decoration: none; color: black;"><em>Light<sup>2</sup><br> as soon as I open my eyes, I see a film</em> </a>
+          
+          <br><br><br>Classrom Collaboration
+          
+          <br>IZK - Institute for Contemporary Art & IEP - Institute of Experimental Physics
+        </p>
+
+      </div>
+    
+        <div class="milica">
+          <div>
+              <img class="img-me" src="img/milica.jpeg" alt="Ahmad Darkhabani">
+          </div>
+          <div class="figcaptionmilica"> 
+              <figure>
+                  <figcaption>Milica Tomić, 2024.</figcaption>
+              </figure>
+          </div>
+      </div> <!-- Properly closed image-container -->
+    </div>
+
+    <div class="ideology">
+      <div style="display: inline-block;">
+        <p style="margin-top: 50px; font-size: larger; font-weight: bolder;">
+          <a href="https://izk.tugraz.at/semesters/winter-semester-2024-2025/who-is-afraid-of-ideology/" style="text-decoration: none; color: black;">
+            <em>Who is Afraid of Ideology?!*</em>
+          </a>
+          <br><br><br>Artistic Practice II
+          <br>IZK - Institute for Contemporary Art
+          <div style="font-weight: lighter;"><br><br>*<i>Who is Afraid of Ideology?!</i> is a reference to a series of films by Marwa Arsanios.</div>
+        </p>
+
+      </div>
+    
+        <div class="mar">
+          <div>
+              <img class="img-me" src="img/mar.jpeg" alt="Ahmad Darkhabani">
+          </div>
+          <div class="figcaptionmar"> 
+              <figure>
+                  <figcaption>Film Still, <i>Taming the Garden</i>, Salomé Jashi, 2021.</figcaption>
+              </figure>
+          </div>
+      </div> <!-- Properly closed image-container -->
+    </div>
+
+
+    <p class="pprojects" style="font-size: larger; margin-top: 100px; color: white; cursor: default; margin-top: 400px; font-weight: bolder;">Projects</p>
+
+
+    <div class="containerbio">
+        <div style="display: inline-block;">
+            <p class="bio">
+                <a href="https://www.praksisoslo.org/r20/pt2" style="text-decoration: none;">
+                    <u>Residency</u> <br>PRAKSIS, Norway
+                    <br><br><em>An Urgent Situation: Rethinking Tourism through Architecture, Art and Community</em>
+                    <br><br>Residency (October 2023)
+                    <br>Publication, Conference (February 2025)
+                </a> 
+            </p>
+
+        </div>
+
+    
+        <div class="image-container">
+            <div>
+                <img class="img-me" src="img/praksis.jpg" alt="Ahmad Darkhabani">
+            </div>
+        </div> <!-- Properly closed image-container -->
+    </div> <!-- Properly closed containerbio -->
+
+    <div class="containerr">
+        <div class="outdoors" style="display: inline-block; font-size: larger; font-weight: bolder; text-decoration: none; cursor: crosshair;">
+            <p>
+                <a href="https://www.museum-joanneum.at/en/kunsthaus-graz/our-programme/cooperations" style="text-decoration: none; color: black;">
+
+                    <u>Language-based Discursive Project</u>
+                    <br> Kunsthaus Graz, Austria<br>2024/25
+                    <br><br><em>Kunsthaus als Sprachlabor / Kunsthaus as a Language Lab</em> </a>
+                    
+        </div>
+
+
+
+        <div class="image-containerr">
+            <div>
+                <img class="img-me" src="img/olya.jpg" alt="Ahmad Darkhabani">
+            </div>
+            <div class="figcaptionn"> 
+                <figure>
+                    <figcaption>Simon Oberhofer, 2023.</figcaption>
+                </figure>
+            </div>
+        </div> <!-- Properly closed image-container -->
+    </div>
+
+
+    <div class="kunstverein">
+        <div style="display: inline-block;">
+            <p class="bio">
+                <u>Podcast</u>
+                <br>On the occasion of the exhibition <em>24/7: Work between Meaning and Imbalance</em>
+                <br>Kunsthaus Graz, Austria<br>2024
+                <a href="https://open.spotify.com/show/5XpXW5c3F0airloq3WMhSL" style="text-decoration: none; color: black;"><br><br><em>Stimmen aus der Arbeitswelt</em></a>
+             
+            </p>
+
+        </div>
+    
+    </div> <!-- Properly closed containerbio -->
+
+    <div class="kunstverein2">
+        <div style="display: inline-block;">
+            <p class="bio">
+                <u>Space for Exhibiting and Discourse</u>
+                <br>Graz, Austria<br>2022/23
+                <a href="annen.html" style="text-decoration: none; color: black;"><br><br><em>Annenstraß53</em></a>
+            </p>
+
+        </div>
+    
+        <div class="eli">
+            <div>
+                <img class="img-me" src="img/annen.jpg" alt="Ahmad Darkhabani">
+            </div>
+            <div class="figcaption"> 
+                <figure>
+                    <figcaption>Annenstraße53 Collective.</figcaption>
+                </figure>
+            </div>
+        </div> <!-- Properly closed image-container -->
+    </div> <!-- Properly closed containerbio -->
+
+
+    <div class="kunstverein3">
+        <div style="display: inline-block;">
+            <p class="bio">
+             <u>Workshop & Lecture</u></a>
+              <br>With artist Edward Clydesdale Thomson <br>2021
+              <br><br><a href="http://archive.grazerkunstverein.org/en/der-grazer-kunstverein-zieht-um/puntigam.html" style="text-decoration: none; color: black;"> <em>Grazer Kunstverein moves to an in-between space</em></a> 
+            </p>
+
+        </div>
+    
+        <div class="baldi">
+            <div>
+                <img class="img-me" src="img/puntigam.jpg" alt="Ahmad Darkhabani">
+            </div>
+            <div class="figcaption"> 
+                <figure>
+                    <figcaption>Image courtesy the artist.</figcaption>
+                </figure>
+            </div>
+        </div> <!-- Properly closed image-container -->
+    </div> <!-- Properly closed containerbio -->
+
+
+    <div class="kunstverein4">
+        <div style="display: inline-block;">
+            <p class="bio">
+                <u>Venice Design Biennial</u></a>
+                 <br>With Pirmin Pilz & AMM Architektinnen machen Möbel <br>2018
+                 <br><br><a href="https://venicedesignbiennial.org/editions/2018/amm-furniture-by-architects-institute-of-spatial-design-graz-university-of-technology" style="text-decoration: none; color: black;"> <em>L O I S</em></a> 
+               </p>
+
+        </div>
+    
+        <div class="alma">
+            <div>
+                <img class="img-me" src="img/chair.jpg" alt="Ahmad Darkhabani">
+            </div>
+            <div class="figcaption"> 
+                <figure>
+                    <figcaption>AMM, 2018.</figcaption>
+                </figure>
+            </div>
+        </div> <!-- Properly closed image-container -->
+    </div> <!-- Properly closed containerbio -->
+
+
+    
+
+   
+
+
+   
+
+
+</body>
+</html>

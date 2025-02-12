@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow-x: hidden; /* Disables horizontal scrolling */
+        }
+
+        .everything {
+            padding: 20px;
+
+        }
+
+        .image-container {
+    width: 100%; /* Make the container take up the full width of the screen */
+    height: auto; /* Allow the height to adjust based on the aspect ratio */
+}
+
+.image-container img {
+    width: 100%; /* Make the image width responsive, filling the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* Optionally, this can crop or adjust the image to fit the container */
+} 
+
+.head {
+  color: rgba(255, 255, 255, 0.525);
+  font-weight: bold;
+  font-size: large;
+
+}
+
+.abstract {
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    line-height: 1.6; /* Improves readability */
+    text-align: justify;
+    width: 80%; /* Constrain width */
+    margin: 90px auto 60px auto;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.image-container2 {
+    float: right;
+    width: 80%; /* Adjust width for responsiveness */
+    margin: 0px auto 5px auto;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-container2 img {
+    float: right;
+    width: 70%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.figcaption {
+    font-size: 0.6rem; /* Adjust font size as needed */
+    color: white;
+    clear: right;
+    float: right;
+   
+}
+
+
+.image-container3 {
+            margin-top: 90px;
+            width: 100%; /* Ensure it takes up full width */
+            justify-content: space-between; /* Align the image and text at opposite ends */
+            margin: 100px auto 10px auto;
+            clear: both;
+        }
+
+        .image-container3 img {
+            width: 45%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: right;
+            clear: none;
+            margin-top: 40px;
+        }
+
+        .image-container4 img {
+            width: 45%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: left;
+            clear: none;
+            margin-top: 40px;
+        }
+
+      
+
+        .image-container5 {
+            margin-top: 90px;
+            width: 100%; /* Ensure it takes up full width */
+            justify-content: space-between; /* Align the image and text at opposite ends */
+            margin: 100px auto 10px auto;
+            clear: both;
+        }
+
+        .image-container5 img {
+            width: 100%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: right;
+            clear: none;
+            margin-top: 40px;
+        }
+
+        .image-container6 img {
+            width: 100%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: left;
+            clear: none;
+            margin-top: 40px;
+        }
+
+        .image-container7 img {
+            width: 100%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: right;
+            clear: none;
+            margin-top: 40px;
+        }
+
+        .image-container8 img {
+            width: 100%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: left;
+            clear: none;
+            
+        }
+
+        .image-container9 img {
+            width: 100%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: left;
+            clear: none;
+            margin-top: 500px;
+            
+        }
+
+        .figcaption2 {
+        font-size: 0.6rem;  /* Adjust font size as needed */
+        color: white;
+        clear: both;
+        margin-top: 10px;
+        word-wrap: break-word;  /* Allow words to break when needed */
+        text-align: right;  /* Optional: Adjust text alignment */
+        }
+
+        .figcaption3 {
+        font-size: 0.6rem;  /* Adjust font size as needed */
+        color: white;
+        clear: both;
+        margin-top: 10px;
+        word-wrap: break-word;  /* Allow words to break when needed */
+        text-align: left;  /* Optional: Adjust text alignment */
+        }
+
+        .figcaption4 {
+        font-size: 0.6rem;  /* Adjust font size as needed */
+        color: white;
+        clear: both;
+        margin-top: 10px;
+        word-wrap: break-word;  /* Allow words to break when needed */
+        text-align: right;  /* Optional: Adjust text alignment */
+        display: block;
+        }
+
+        .figcaption5 {
+        font-size: 0.6rem;  /* Adjust font size as needed */
+        color: white;
+        clear: both;
+        word-wrap: break-word;  /* Allow words to break when needed */
+        text-align: left;  /* Optional: Adjust text alignment */
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .violence {
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+            line-height: 1.6; /* Improves readability */
+            text-align: justify;
+            width: 80%; /* Constrain width */
+            margin: 90px auto 60px auto;
+            margin-top: 400px;
+            margin-bottom: 400px;
+        }
+
+        .titlevio {
+            text-align: center;
+        }
+
+        .statement {
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+            line-height: 1.6; /* Improves readability */
+            text-align: center;
+            width: 80%; /* Constrain width */
+            margin: 90px auto 60px auto;
+            margin-top: 400px;
+        }
+
+        .statement2 {
+            text-align: center;
+        }
+
+        .spatial {
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+            line-height: 1.6; /* Improves readability */
+            text-align: justify;
+            width: 80%; /* Constrain width */
+            margin: 90px auto 60px auto;
+            margin-top: 1000px;
+            margin-bottom: 400px;
+        }
+
+        .spatial2 {
+            text-align: center;
+        }
+
+        .kunst {
+            text-align: right;
+        }
+
+        @media only screen and (max-width: 600px) {
+    .abstract, .violence, .statement, .spatial {
+        text-align: left; /* Override justify with left alignment for smaller screens */
+        width: auto; /* Increase width for wider appearance */
+        font-size: 1.2rem; /* Increase font size for better readability */
+        line-height: 1.8; /* Increase line height for better spacing */
+    }
+
+    .image-container, 
+    .image-container2, 
+    .image-container3, 
+    .image-container4, 
+    .image-container5, 
+    .image-container6, 
+    .image-container7, 
+    .image-container8 {
+        width: 100%; /* Make each container take full width */
+        margin: 10px 0; /* Add some space between sections */
+        float: none; /* Disable floating for mobile */
+    }
+
+    .image-container img, 
+    .image-container2 img, 
+    .image-container3 img, 
+    .image-container4 img, 
+    .image-container5 img, 
+    .image-container6 img, 
+    .image-container7 img, 
+    .image-container8 img {
+        width: 100%; /* Ensure the image takes up the full width */
+        height: auto; /* Maintain aspect ratio */
+        float: none; /* Ensure no floating */
+    }
+    .image-container, 
+    .image-container2, 
+    .image-container3, 
+    .image-container4, 
+    .image-container5, 
+    .image-container6, 
+    .image-container7, 
+    .image-container8 {
+        width: 100%; /* Make each container take full width */
+        margin: 10px 0; /* Add some space between sections */
+        float: none; /* Disable floating for mobile */
+        font-weight: bolder;
+        line-height: 3;
+        font-size: larger;
+    }
+
+    .image-container img, 
+    .image-container2 img, 
+    .image-container3 img, 
+    .image-container4 img, 
+    .image-container5 img, 
+    .image-container6 img, 
+    .image-container7 img, 
+    .image-container8 img {
+        width: 100%; /* Ensure the image takes up the full width */
+        height: auto; /* Maintain aspect ratio */
+        float: none; /* Ensure no floating */
+    }
+
+    .figcaption, 
+    .figcaption2, 
+    .figcaption3, 
+    .figcaption4, 
+    .figcaption5 {
+        text-align: left; /* Center align captions for better readability */
+    }
+}
+
+         
+
+
+
+
+
+        
+    </style>
+</head>
+<body> 
+    <div class="image-container"> 
+        <div>
+            <img class="removed" src="img/removed.jpg" alt="Ahmad Darkhabani">
+        </div>
+    </div>
+
+    <div class="everything"> 
+        <div class="head"> 
+            <p><i>Construction Sites of the Social</i></p>
+            <br>
+            <p>Master's thesis</p>
+            <br>
+            <p>IZK Institute for Contemporary Art</p>
+            <br>
+            <p>Graz University of Technology</p>
+            <br>
+            <p>Faculty of Architecture</p>
+            <br>
+            <p>Supervisor: Univ.-Prof. Mag. Milica Tomić</p>
+            <br>
+            <p>2024</p>
+
+        </div>
+
+        <div class="abstract"> 
+            <p> <u>Abstract</u>
+                <br>
+                <br>
+                The relationship between architecture and the social is a relationship of
+                continuous mutual construction. Not only do we build and design architecture,
+                but also architecture in return constructs societies and perpetuates ideological
+                power dynamics. The societies that emerge from this construction eventually
+                become the mediums where violence is justified, rationalized, and expanded. 
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In light of this, 
+                the thesis investigates simultaneously two spatial configurations that
+                function as construction sites of the social. These spaces are metaphorically
+                called the White Cube and the Black Box and refer to the contemporary art
+                exhibition space and the prison. The logic of studying these two spaces stands
+                behind the argument that they were produced exactly at the intersection of
+                various political and ideological regimes. Therefore, juxtaposing the White Cube
+                and the Black Box will unfold interlinked histories explaining the contradictions
+                of the present.
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As an outline of investigation, the dissertation begins with tracing the
+                interlinked histories of the carceral system under the influence of modernity
+                and the Exhibitionary Complex as studied by Tony Bennett. It continues
+                investigating the historical consequences that established the Black Box as
+                a tool of dominance and the White Cube as a colonial instrument. Then, the
+                research demonstrates how display and torture intersect as acts of violence
+                by presenting examples where subjugation goes beyond object and subject
+                relations and is practiced in abstraction. The last part of the dissertation is an
+                architectural reading of two sites, one of them is a contemporary art association
+                called Grazer Kunstverein in Austria and the other is a notorious detention
+                center called Saydnaya Prison in Syria.
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This research concludes that oppressive regimes build institutions to
+                produce submissive societies. It does so by revealing the role of architecture
+                in enforcing discipline and thought suppression. Ultimately, the dissertation
+                suggests that architecture is not merely a passive backdrop but an active
+                participant in shaping societal structures. This research demands finding ways
+                to imagine architectures that function as spaces of emancipation.
+                </p>
+
+        </div>
+
+        <div class="image-container2">
+            <div>
+                <img class="diagram" src="img/diagram.jpg" alt="Ahmad Darkhabani">
+            </div>
+        </div>
+
+        <div class="figcaption"> 
+            <figure class="figure">
+                <figcaption>Ahmad Darkhabani, 2024.</figcaption>
+            </figure>
+
+        </div>
+
+           
+
+        <div class="image-container3">
+            <div>
+             <img class="scope" src="img/scope.jpg" alt="Ahmad Darkhabani">
+            </div>
+        </div>
+
+
+        <div class="image-container4">
+            <div>
+             <img class="scope" src="img/regime.jpg" alt="Ahmad Darkhabani">
+            </div>
+        </div>
+
+        <div class="figcaption2"> 
+            <figure>
+                <figcaption>Gilman’s Skiascope, 1917. Source: Journal Panorama.</figcaption>
+            </figure>
+        </div>
+        <div class="violence">
+            <p class="titlevio">Systems of Violence</p><br>
+            <p>In this section, I examine the systems of violence associated with both the White Cube and the Black Box. 
+            Specifically, I explore the intersection of two primary actions commonly practiced in these spaces: Display and Torture. 
+            To illustrate this, I present three case studies that offer alternative perspectives on torture and display, 
+            moving beyond the traditional object/subject dynamics. The case studies are: Towers of Silence, Torture of Display, and <i>Soluble Poison. Scenes from the American occupation (Baghdad)</i> by artist Jean-Jacques Lebel.</p>
+        </div>
+
+
+        <div class="image-container5">
+            <div>
+                <img src="img/rob.jpg" alt="Ahmad Darkhabani">
+            </div>
+        </div>
+
+
+        <div class="image-container6">
+            <div>
+             <img class="scope" src="img/tower.jpg" alt="Ahmad Darkhabani">
+            </div>
+        </div>
+
+
+        <div class="figcaption3"> 
+            <figure>
+                <figcaption>Towers of Silence, Yazd, Iran. Fodasun.com</figcaption>
+            </figure>
+        </div>
+
+        <div class="statement">
+            <p class="statement2"><u>Statement</u></p><br>
+            <p>I refuse to include any pictures of <em>Soluble Poison. Scenes from the American occupation (Baghdad)</em> artwork displayed at the
+                Berlin Biennale 2022 in this thesis. This refusal is based on my argument that
+                circulating such images perpetuates the position of the victim and normalizes
+                the violence inflicted by the United States military force on the Iraqi body.
+                
+            </p>
+        </div>
+
+        <div class="spatial">
+            <p class="spatial2">Spatial investigation</p><br>
+            <p>This section examines how the Black Box and the White Cube are realized through their architecture. 
+                For this, I bring two concrete examples that represent these models and I read their spaces from an 
+                architectural lens.
+                The first case of study is the Grazer Kunstverein, a contemporary art association 
+                located in Graz, Austria. In contrast, I examine Sydnaya Prison, a notorious detention center
+                located in Damascus, Syria. Both sites featured in this study exemplify the disciplinary mechanisms 
+                found in both the prison system and the exhibitionary complex. They are part of a broader institutional 
+                framework and function within a unified system of governance.
+            </p>
+        </div>
+
+
+        <div class="image-container7">
+            <div>
+                <img src="img/kunst.jpeg" alt="Ahmad Darkhabani">
+            </div>
+        </div>
+
+     
+
+
+        <div class="image-container8">
+            <div>
+             <img class="scope" src="img/prison.jpg" alt="Ahmad Darkhabani">
+            </div>
+        </div>
+
+        <div class="figcaption5"> 
+            <figure>
+                <figcaption>Saydnaya Prison, Forensic Architecture Agency, 2016.</figcaption>
+            </figure>
+        </div>
+
+
+        <div class="image-container9">
+            <div>
+             <img src="img/book.jpg" alt="Ahmad Darkhabani">
+            </div>
+        </div>
+
+      
+
+       
+
+
+
+    </div>
+
+
+
+
+   
+     
+
+
+</body>
+</html>

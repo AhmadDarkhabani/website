@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Elder Poem</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow-x: hidden; /* Disables horizontal scrolling */
+        }
+
+        .everything {
+            padding: 20px;
+
+        }
+
+        .image-container {
+    width: 100%; /* Make the container take up the full width of the screen */
+    height: auto; /* Allow the height to adjust based on the aspect ratio */
+}
+
+.image-container img {
+    width: 100%; /* Make the image width responsive, filling the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* Optionally, this can crop or adjust the image to fit the container */
+} 
+
+.head {
+  color: rgba(255, 255, 255, 0.525);
+  font-weight: bold;
+  font-size: large;
+
+}
+
+.abstract {
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    line-height: 1.6; /* Improves readability */
+    text-align: justify;
+    width: 80%; /* Constrain width */
+    margin: 90px auto 60px auto;
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+
+.image-container2 {
+    width: 100%; /* Make the container take up the full width of the screen */
+    height: auto; /* Allow the height to adjust based on the aspect ratio */
+    margin-top: 300px;
+}
+
+.image-container2 img {
+    width: 100%; /* Make the image width responsive, filling the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* Optionally, this can crop or adjust the image to fit the container */
+} 
+
+.image-container6 {
+    width: 100%; /* Make the container take up the full width of the screen */
+    height: auto; /* Allow the height to adjust based on the aspect ratio */
+}
+
+.image-container6 img {
+    width: 100%; /* Make the image width responsive, filling the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* Optionally, this can crop or adjust the image to fit the container */
+} 
+
+.image-container16 {
+    width: 100%; /* Make the container take up the full width of the screen */
+    height: auto; /* Allow the height to adjust based on the aspect ratio */
+    margin-top: 300px;
+}
+
+.image-container16 img {
+    width: 100%; /* Make the image width responsive, filling the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* Optionally, this can crop or adjust the image to fit the container */
+} 
+
+
+.figcaption {
+    font-size: 0.6rem; /* Adjust font size as needed */
+    color: white;
+   
+    
+   
+}
+
+
+.image-container3 {
+            margin-top: 90px;
+            width: 100%; /* Ensure it takes up full width */
+            justify-content: space-between; /* Align the image and text at opposite ends */
+            margin: 100px auto 10px auto;
+            clear: both;
+        }
+
+        .image-container3 img {
+            width: 45%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: right;
+            clear: none;
+            margin-top: 40px;
+        }
+
+        .image-container4 img {
+            width: 45%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: left;
+            clear: none;
+            margin-top: 40px;
+        }
+
+      
+
+        .image-container5 {
+            margin-top: 90px;
+            width: 100%; /* Ensure it takes up full width */
+            justify-content: space-between; /* Align the image and text at opposite ends */
+            margin: 100px auto 10px auto;
+            clear: both;
+        }
+
+        .image-container5 img {
+            width: 45%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: right;
+            clear: none;
+            margin-top: 40px;
+        }
+
+       
+
+        .image-container7 img {
+            width: 45%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: right;
+            clear: none;
+            margin-top: 40px;
+        }
+
+        .image-container8 img {
+            width: 51%; /* Adjust the image width */
+            height: auto; /* Maintain aspect ratio */
+            float: left;
+            clear: none;
+            margin-top: 40px;
+        }
+
+        .figcaption2 {
+        font-size: 0.6rem;  /* Adjust font size as needed */
+        color: white;
+        clear: both;
+        margin-top: 10px;
+        word-wrap: break-word;  /* Allow words to break when needed */
+        text-align: left;  /* Optional: Adjust text alignment */
+        }
+
+        .figcaption3 {
+        font-size: 0.6rem;  /* Adjust font size as needed */
+        color: white;
+        clear: both;
+        margin-top: 10px;
+        word-wrap: break-word;  /* Allow words to break when needed */
+        text-align: left;  /* Optional: Adjust text alignment */
+        }
+
+        .figcaption4 {
+        font-size: 0.6rem;  /* Adjust font size as needed */
+        color: white;
+        clear: both;
+        margin-top: 10px;
+        word-wrap: break-word;  /* Allow words to break when needed */
+        text-align: left;  /* Optional: Adjust text alignment */
+        display: block;
+        }
+
+        .figcaption5 {
+        font-size: 0.6rem;  /* Adjust font size as needed */
+        color: white;
+        clear: both;
+        word-wrap: break-word;  /* Allow words to break when needed */
+        text-align: left;  /* Optional: Adjust text alignment */
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .violence {
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+            line-height: 1.6; /* Improves readability */
+            text-align: justify;
+            width: 80%; /* Constrain width */
+            margin: 90px auto 60px auto;
+            margin-top: 400px;
+            margin-bottom: 400px;
+        }
+
+        .titlevio {
+            text-align: center;
+        }
+
+        .statement {
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+            line-height: 1.6; /* Improves readability */
+            text-align: justify;
+            width: 80%; /* Constrain width */
+            margin: 90px auto 60px auto;
+            margin-top: 100px;
+        }
+
+        .statement2 {
+            text-align: center;
+        }
+
+        .spatial {
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+            line-height: 1.6; /* Improves readability */
+            text-align: justify;
+            width: 80%; /* Constrain width */
+            margin: 90px auto 60px auto;
+            margin-top: 1000px;
+        }
+
+        .spatial2 {
+            text-align: center;
+        }
+
+        .kunst {
+            text-align: right;
+        }
+
+        @media only screen and (max-width: 600px) {
+    .abstract, .violence, .statement, .spatial {
+        text-align: left; /* Override justify with left alignment for smaller screens */
+        width: auto; /* Increase width for wider appearance */
+        font-size: 1.2rem; /* Increase font size for better readability */
+        line-height: 1.8; /* Increase line height for better spacing */
+    }
+
+    .image-container, 
+    .image-container2, 
+    .image-container3, 
+    .image-container4, 
+    .image-container5, 
+    .image-container6, 
+    .image-container7, 
+    .image-container8 {
+        width: 100%; /* Make each container take full width */
+        margin: 10px 0; /* Add some space between sections */
+        float: none; /* Disable floating for mobile */
+    }
+
+    .image-container img, 
+    .image-container2 img, 
+    .image-container3 img, 
+    .image-container4 img, 
+    .image-container5 img, 
+    .image-container6 img, 
+    .image-container7 img, 
+    .image-container8 img {
+        width: 100%; /* Ensure the image takes up the full width */
+        height: auto; /* Maintain aspect ratio */
+        float: none; /* Ensure no floating */
+    }
+    .image-container, 
+    .image-container2, 
+    .image-container3, 
+    .image-container4, 
+    .image-container5, 
+    .image-container6, 
+    .image-container7, 
+    .image-container8 {
+        width: 100%; /* Make each container take full width */
+        margin: 10px 0; /* Add some space between sections */
+        float: none; /* Disable floating for mobile */
+        font-weight: bolder;
+        line-height: 3;
+        font-size: larger;
+    }
+
+    .image-container img, 
+    .image-container2 img, 
+    .image-container3 img, 
+    .image-container4 img, 
+    .image-container5 img, 
+    .image-container6 img, 
+    .image-container7 img, 
+    .image-container8 img {
+        width: 100%; /* Ensure the image takes up the full width */
+        height: auto; /* Maintain aspect ratio */
+        float: none; /* Ensure no floating */
+    }
+
+    .figcaption, 
+    .figcaption2, 
+    .figcaption3, 
+    .figcaption4, 
+    .figcaption5 {
+        text-align: right; /* Center align captions for better readability */
+    }
+}
+
+         
+
+
+
+
+
+        
+    </style>
+</head>
+<body> 
+    <div class="image-container"> 
+        <div>
+            <img class="removed" src="img/eli2.jpg" alt="Ahmad Darkhabani">
+        </div>
+    </div>
+
+    <div class="everything"> 
+        <div class="head"> 
+            <p><i>The Elder Poem</i></p>
+            <br>
+            <p>Artist</p>
+            <p>Elisabeth von Samsonow</p>
+            <br>
+            <p>Curated by Kate Strain <br> Co-Curator: Ahmad Darkhabani</p>
+            <br>
+            <p>Venue: Grazer Kunstverein</p>
+            <br>
+            <p>Graz, Austria</p>
+            <br><p>2021</p>
+
+        </div>
+
+        <div class="abstract"> 
+            <p> 
+              This exhibition begins almost 300 km from here, in The Land of the Goddesses, a rich 
+              and diverse patch of farmland in the region of Hollabrunn, Lower Austria. This almost 
+              four hectare area was acquired in 2020 by Elisabeth von Samsonow and a group of artists 
+              and supporters, and has become a site of profound artistic activity. From revealing the 
+              ‘fountain of Holla’ to teaching about the role of the elder and the White Goddess to becoming 
+              a holding space for performative and discursive events, the land is offering Elisabeth and her 
+              colleagues of the <i>Dissident Goddesses’ Network</i> and beyond the chance to remap the territory, 
+              and in doing so to find new ways to engage with nature, art, philosophy, and one another 
+              in the form of a parliament.<br>The connection between nature and her Goddesses, land,
+              travel and the celebration of the divine has been a long-held tradition in Styria, where one 
+              can still view a cult wagon from 600 BC in the Universalmuseum Joanneum in Graz. This bronze 
+              archaeological find, dating from the Hallstatt period, is thought to depict a sacrificial ritual 
+              involving a procession at the center of which is a female figure. The Strettweg cult wagon has 
+              served as the inspiration for von Samsonow’s newest series of works -  a cluster of cult chariots 
+              that support the Pretzel Goddess as she roams around the earth.<br>Linking back to <i>The White Goddess</i> as 
+              described in Robert von Ranke-Graves’ eponymous book, von Samsonow conjures a world in which the 
+              secrets and wisdom of nature can be accessed through poetry as contact with the divine. 
+              In von Samsonow’s words ‘Territorialization, unintentional or intentional, means coming-back-to-one’s 
+              world, to reattach oneself to a segment of the world.’ With her collaborative film work <i>A Visit, A 
+                Ceremony, A Gift,</i> von Samsonow opens portals between The Land of the Goddesses and near and distant 
+              islands, from a floating mound in Graz to remote parts of Galway in the West coast of Ireland. 
+              Von Samsonow’s quest to bring the natural world into our everyday imaginary collapses timescales 
+              and distance, evoking not only the past but also multiple potential futures in every sacred earthly 
+              moment her works create.
+                </p>
+
+        </div>
+
+        <div class="image-container2">
+            <div>
+                <img class="diagram" src="img/eli3.jpg" alt="Ahmad Darkhabani">
+            </div>
+        </div>
+
+        <div class="figcaption"> 
+            <figure class="figure">
+                <figcaption>Christine Winkler, 2021.</figcaption>
+            </figure>
+
+        </div>
+
+        <div class="image-container2">
+          <div>
+              <img class="diagram" src="img/eli4.jpg" alt="Ahmad Darkhabani">
+          </div>
+      </div>
+
+      <div class="figcaption"> 
+          <figure class="figure">
+              <figcaption>Christine Winkler, 2021.</figcaption>
+          </figure>
+
+      </div>
+
+           
+        <div class="violence">
+            <p class="titlevio">Artist</p><br>
+            <p>Elisabeth von Samsonow (born 1956) is a German-Austrian artist, activist and philosopher who is a professor of philosophic and historical anthropology at the Academy of Fine Arts, Vienna. She is a founding member of the Dissident Goddesses’ Network, an association of researchers and artists that finds new approaches to Paleolithic and Neolithic female figurines from Lower Austria, further she is a founding part of The Land of the Goddesses, a project on four hectare of land dedicated to matriarchy, art and the development of ecological awareness.<br>
+              In her practice as an artist and curator she focuses on the systemic and symbolic place of sculpture and plastic art. Her artistic practice includes sculpture, performance, painting, video and installation. Her research delves into the history of philosophy and religion, a theory of a collective consciousness, the history of the relationship between art/ technique, religion and psychoanalysis, the history of the perception of women and female identification (Young Girl Studies), the dissolution of the self in modernity and feminist ecology.<br>
+              Recent publications include Anti Electra. The Radical Totem of the Girl (Minnesota University Press, Minnesota 2019), The Goddesses Books (4 vols., as an editor, Verlag für Bildende Kunst Wien 2019–2020), Epidemic Subjects – Radical Ontology (Diaphanes, Zürich/Berlin, 2017) and Egon Schiele as Collector (Bibliothek der Provinz, 2016). She has shown her works and projects in solo exhibitions at the Natural History Museum, Vienna (2020), Dominican church, Krems (2016), and MuseumsQuartier, Vienna (2015). She has performed, among others, at the Venice Biennale (2019), the Solyanka State Gallery Moscow (2017), the Museum of Applied Arts, Vienna (2016) and the Kunstraum Niederösterreich, Vienna (2016). Von Samsonow has participated in numerous group shows, most recently at the Kunstverein Carinthia (2020), Leopold Museum, Vienna (2018) and Kunsthalle Tirol (2018). Her work is included in the collections of the Belvedere Museum, Vienna, the Federal Chancellery of Austria, the city of Vienna and the federal state of Lower Austria.
+              As part of her exhibition The Elder Poem a recent collaborative film by von Samsonow and others will be screened. Titled A Visit, A Ceremony, A Gift this film was commissioned by TULCA Festival of Visual Arts as part of the Unselfing Program for Galway European Capital of Culture 2020 with support from French Embassy in Ireland.   
+            </p>
+        </div>
+
+
+
+        <div class="image-container6">
+            <div>
+             <img class="scope" src="img/eli5.jpg" alt="Ahmad Darkhabani">
+            </div>
+        </div>
+
+
+        <div class="figcaption3"> 
+            <figure>
+                <figcaption>Christine Winkler, 2021.</figcaption>
+            </figure>
+        </div>
+
+        <div class="image-container16">
+          <div>
+           <img class="scope" src="img/eli6.jpg" alt="Ahmad Darkhabani">
+          </div>
+      </div>
+
+
+      <div class="figcaption3"> 
+          <figure>
+              <figcaption>Christine Winkler, 2021.</figcaption>
+          </figure>
+      </div>
+
+      
+
+       
+
+
+
+    </div>
+
+
+
+
+   
+     
+
+
+</body>
+</html>

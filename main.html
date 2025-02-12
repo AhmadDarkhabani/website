@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Darkhabani أحمد درخباني</title>
+    <link rel="stylesheet" type="text/css" href="buttons.css" media="screen">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgba(7, 7, 31, 0.366);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            overflow-y: auto; /* Allow vertical scrolling */
+        }
+
+        /* This will make each element disappear on hover */
+        h1:hover, p:hover, a:hover {
+            opacity: 0;
+            cursor: default; /* Keeps the pointer regular */
+            transition: opacity 0.5s; /* Optional for smooth effect */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .title-english, .title-arabic {
+            font-size: large;
+            margin: 0;
+        }
+
+        .title-arabic {
+            text-align: right;
+            direction: rtl;
+            font-size: x-large;
+        }
+
+        .marhaba {
+            text-align: left;
+            font-size: larger;
+            font-weight: larger;
+            font-weight: bolder;
+            margin-top: 90px;
+        }
+
+        .navbar {
+    display: flex;
+    flex-direction: column; /* Keeps links stacked vertically */
+    position: fixed; /* Fixes the navbar to the viewport */
+    top: 500px;
+    right: 0; /* Aligns it to the left */
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    padding: 10px 20px; /* Adds padding around the links */
+    width: 180px; /* Width of the navbar */
+    font-weight: 900;
+}
+
+.navbar a {
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    font-weight: bolder;
+    width: 100%;
+    padding: 10px 0;
+    letter-spacing: 1.5px;
+}
+
+
+    /* Each specific link can be styled individually if needed for alignment */
+    .navbar a[href="about.html"] { letter-spacing: 16.2px; }
+    .navbar a[href="writing.html"] { letter-spacing: 9.3px; }
+    .navbar a[href="research.html"] { letter-spacing: 4.6px; }
+    .navbar a[href="exhibitions.html"] { letter-spacing: 1.3px; }
+    .navbar a[href="projects.html"] { letter-spacing: 6px; }
+    .navbar a[href="#publications"] { letter-spacing: 0px; } /* No extra space needed */
+
+
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .title-arabic {
+                text-align: right;
+                float: right;
+                position: static;
+                margin-top: 10px;
+                right: 0;
+            }
+
+            .navbar {
+        position: static;  /* Fix navbar to the right side */
+        float: right;
+        margin-top: 200px;
+        
+        right: 0;  /* Align navbar to the right side */
+        font-weight: bolder; /* Font weight for navbar items */
+        margin-bottom: 100px;
+
+       
+    }
+
+
+            body {
+        overflow-y: scroll; /* Ensure content is scrollable */
+    }
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="title-english">
+            <h1>Ahmad Darkhabani</h1>
+        </div>
+        <div class="title-arabic">
+            <h1>أحمد درخباني</h1>
+        </div>
+    </div>
+  
+
+
+    <p class="marhaba">
+        ، ًمرحبا<br>
+        Thank you for being here, wherever <em>here</em> might actually be.<br> 
+        Since I arguably exist in the physical world, I also had to find a way to exist in the digital one.<br> 
+        This page is a temporary place, a possibility. It will change, evolve, and most likely it will disappear<br>
+        <p style="color: blue; font-weight: bolder; font-size: larger;">PS</p><p style="font-weight: bolder;font-size: larger;">
+            This website was built using my very basic (non-existent) <u>.html</u> coding skills.<br> I just wanted to learn something new, and I deeply regret this decision.
+            <br>Please understand that this website will be forever under construction.</p>
+    </p>
+
+    <!-- Navigation bar with evenly spread categories -->
+    <div class="navbar">
+        <a href="about.html">About</a>
+        <a href="writing.html">Writing</a>
+        <a href="research.html">Research</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="projects.html">Projects</a>
+    </div>
+    
+</body>
+</html>

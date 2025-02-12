@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgba(7, 7, 31, 0.366);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            position: relative;
+        }
+
+        h1:hover, p:hover, a:hover {
+            opacity: 0;
+            cursor: default; /* Keeps the pointer regular */
+            transition: opacity 0.5s; /* Optional for smooth effect */
+        }
+
+
+        .container {
+            transition: opacity 0.5s;
+            cursor: default;
+        }
+
+        .containerbio {
+            transition: opacity 0.5s;
+            cursor: default;
+        }
+
+        .bio {
+            text-align: left;
+            font-size: larger;
+            font-weight: 700;
+            margin-top: 90px; /* Indicate interactivity */
+        }
+
+        .interbio {
+            text-align: left;
+            font-size: larger;
+            font-weight: 700;
+            margin-top: 90px;
+        }
+
+        .hello {
+            display: none;
+            font-size: larger;
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            position: absolute;
+            top:50%;
+            left: 55%;
+            transform: translate(-30%, -50%);
+            transition: width 0.5s ease, opacity 0.5s ease; /* Transition width and opacity */
+            text-align: justify;
+            line-height: 1.2;
+        }
+
+        .text {
+            display: none;
+            font-size: 1.25rem;
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            position: absolute;
+            top:35%;
+            left: 55%;
+            transform: translate(-30%, -50%);
+            width: 900px; /* Initially no width */
+            transition: width 0.5s ease, opacity 0.5s ease; /* Transition width and opacity */
+            text-align: justify;
+            line-height: 1.2;
+        }
+
+        .contact {
+            font-size: larger;
+            font-weight: bolder;
+            text-align: left;
+            margin-top: 450px; /* Reset margin-top to avoid issues */
+        }
+
+
+
+
+        /* Hide everything in the container and show HELLO */
+        .containerbio:hover .text {
+            display: block; /* Show HELLO when containerbio is hovered */
+        }
+
+        .image-container {
+            display: none;
+            float: left; /* Align image to the left */
+            margin-right: 900px;
+            
+        }
+
+        .image-container img {
+         width: 450px; /* Adjust the width to make the image smaller */
+
+        }
+
+        .figcaption {
+    font-size: 0.6rem; /* Adjust font size as needed */
+}
+
+        .containerbio:hover ~ .container {
+            opacity: 0;
+        }
+
+        
+        .container:hover .hello {
+            display: block; /* Show HELLO when containerbio is hovered */
+        }
+
+    
+        .interbio:hover .containerbio  {
+            opacity: 0; /* Hide everything inside the containerbio */
+        }
+
+        .image-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .containerbio:hover .image-container {
+            display: block;
+        }
+
+        .containerbio:hover + .containerabout .title-english h1 {
+            display: none;
+        }
+
+      @media screen and (max-width: 768px) {
+    .bio {
+        display: block;
+        margin-top: 20px; /* Add spacing for the "Biography" heading */
+        text-align: left; /* Center-align the heading */
+        opacity: 1;
+       
+    }
+
+    .interbio {
+        display: block;
+        margin-top: 200px; /* Add spacing for the "Biography" heading */
+        text-align: left; /* Center-align the heading */
+        color: blue;
+        opacity: 1;
+    }
+
+    .contact {
+        display: block;
+        bottom: 0;
+        margin-top: 100px; /* Add spacing for the "Biography" heading */
+        text-align: left; /* Center-align the heading */
+        opacity: 1;
+    }
+
+    .image-container {
+        display: block; /* Ensure the image is visible */
+        margin: 20px auto; /* Center the image */
+        text-align: left; /* Center-align the image */
+        width: 100%;
+        opacity: 1;
+    }
+
+    .image-container img {
+        width: 100%; /* Make the image responsive */
+        max-width: 300px; /* Limit the max width for better display */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 1;
+    }
+
+    .text {
+        display: block; /* Ensure the text is visible */
+        font-size: larger; /* Adjust font size for readability */
+        text-align: left; /* Align text for natural reading */
+        margin: 20px 0; /* Add spacing between image and text */
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove transformations */
+        width: auto; /* Allow natural width */
+        font-weight: bolder;
+        line-height: 1.3;
+        opacity: 1;
+    }
+
+    .hello {
+        display: block; /* Ensure the text is visible */
+        font-size: larger; /* Adjust font size for readability */
+        text-align: left; /* Align text for natural reading */
+        margin: 20px 0; /* Add spacing between image and text */
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove transformations */
+        width: auto; /* Allow natural width */
+        font-weight: bolder;
+        line-height: 1.3;
+        opacity: 1;
+    }
+
+    .contact {
+        display: block;
+        margin-top: 100px; /* Adjust spacing for smaller screens */
+        text-align: left; /* Ensure alignment matches the design */
+        opacity: 1;
+    }
+
+}
+
+        
+    </style>
+</head>
+<body> 
+    
+   
+        
+      <div class="containerabout">
+        <div class="title-english">
+            <h1>About</h1>
+        </div>
+      </div>
+
+     <div class="containerbio">
+        <p class="bio">Biography</p>
+
+        <div class="image-container">
+            <div>
+                <img class="img-me" src="img/me.jpg" alt="Ahmad Darkhabani">
+            </div>
+           
+           <div class="figcaption"> 
+            <figure>
+                <figcaption>Thomas Raggam, 2021.</figcaption>
+            </figure>
+
+           </div>
+            
+        </div>
+
+        <div class="text">
+          <p>Ahmad Darkhabani is an architect, independent curator, 
+            researcher, and writer. He currently works as a 
+            Lecturer at the Institute for Contemporary Art (IZK) 
+            within the Faculty of Architecture at Graz University 
+            of Technology. Additionally, he works with the Art & 
+            Architecture Mediation Department at the Universalmuseum Joanneum, 
+            which includes Kunsthaus Graz and Neue Galerie Graz.
+            <p>After he graduated from the Faculty of Architecture at Damascus 
+              University in Syria (2017), Darkhabani was awarded a one-year 
+              scholarship to study at Graz University of Technology in Austria, 
+              where he finished his Master of Science in architecture.
+            </p>
+          </p>
+          <br> 
+          <p>Darkhabani's work explores the intersection of contemporary 
+            art and architecture, focusing on their role in constructing 
+            reality and the social sphere. His research asserts that architecture 
+            is not merely a passive backdrop but an active participant in shaping 
+            societal structures. Through text and language, Darkhabani is developing
+            a research methodology that challenges conventional, linear understandings
+            of history and time.
+          </p>
+          <br>
+        
+          <p>Darkhabani worked as a Production & Curatorial Assistant at 
+            Grazer Kunstverein, where he co-curated various exhibitions 
+            such as <i>Cameo</i> by artist Bianca Baldi and <i>The Actress</i> by artists 
+            Aimée Zito Lema and Becket MWN (2021). He was also a member of the 
+            curatorial collective <i>Das Gesellschaftliche Ding</i> and worked on the 
+            exhibition <i>Outdoors, Gunpowder Burns Quietly</i> by artist Olia Sosnovskaya
+            at Annenstraße 53 (2022). Additionally, he co-organized the exhibition
+            <i>Is It The Same?!</i> by artists Larion Lozovyi, Maria Matiashova, 
+            Andrii Rachynskyi, and Daniil Revkovskyi (2023). Darkhabani worked in
+            Art & Culture Mediation at Schloss Eggenberg (UNESCO World Heritage Site)
+            and was a Project Coordinator at steirischer herbst’20 - Paranoia TV.
+            </p>
+            <br>
+
+        <p>Darkhabani realized various projects such as <i>Kunsthaus als Sprachlabor</i> (2024) 
+          and <i>Grazer Kunstverein Moves to an In-Between Space</i> with artist Edward Clydesdale 
+          Thomson and others (2021). He was also a resident at Praksis Oslo, Norway, where he 
+          co-developed a manifesto rethinking tourism through architecture, art, and community (2022/24). 
+          Darkhabani participated in the Summer School at Kunstverein München, where he contributed to a 
+          publication titled <i>The Stories We Tell Ourselves</i> (2021). Most recently, he was one of
+          the selected curators to join the Autumn School of Curating led by Kate Fowle in Cluj-Napoca and Timișoara, Romania (2024).</p>
+        
+     </div>
+          </div> <!-- Moved hello inside containerbio -->
+     </div>
+    
+  <div class="container">
+        <p class="interbio">... more interesting biography</p>
+
+        <div class="hello">
+            I was born in Damascus, Syria, but I don’t necessarily identify with borders imposed by colonial, imperial, and oppressive regimes. <br>Concerning identity; I believe we are ephemeral beings, floating through fractions of time. 
+            <br>I’m very interested in the fragility of reality and the human life. <br>It is fascinating to me how weak we are, yet we think of ourselves as something powerful. <br>Mostly, I’m looking for moments of failure, vulnerability, and the worlds we miss while we’re blinking. 
+            <br>I write because reading is mostly a silent act. <br> I work in art because it is the only realm where reality is revealed.
+        </div>
+    </div>
+
+   <div class="contact">
+    <p class="contactword"> Contact </p>
+    <div class="email">
+        ahmad_drkhpanie@hotmail.com
+        <a href="https://www.instagram.com/ahmad.darkhabani" target="_blank" rel="noopener noreferrer">
+            <p style="color: black;">@ahmad.darkhabani</p>
+        </a>
+    </div>
+</div>
+
+   
+
+
+</body>
+</html>

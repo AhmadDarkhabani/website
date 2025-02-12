@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgba(7, 7, 31, 0.366);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            position: relative;
+        }
+
+        h1:hover, p:hover, a:hover {
+            opacity: 0;
+            cursor: default; /* Keeps the pointer regular */
+            transition: opacity 0.5s; /* Optional for smooth effect */
+        }
+
+
+        .container {
+            transition: opacity 0.5s;
+            cursor: default;
+        }
+
+        .containerbio {
+            transition: opacity 0.5s;
+            cursor: default;
+        }
+
+        .bio {
+            text-align: left;
+            font-size: larger;
+            font-weight: 700;
+            margin-top: 90px; /* Indicate interactivity */
+        }
+
+        .interbio {
+    text-align: left;
+    font-size: larger; /* Ensure both use the same size */
+    font-weight: 700; /* Ensure both use the same weight */
+    margin-top: 90px;
+}
+
+.interbio a {
+    color: black;
+}
+
+/* Specific hover style for .interbio */
+.interbio:hover a {
+    cursor: crosshair; /* Changes to hand cursor on hover */
+    opacity: 1; /* Optional subtle hover effect */
+}
+
+        .hello {
+            display: none;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            text-align: left;
+            position: absolute;
+            top:50%;
+            left: 70%;
+            transform: translate(-30%, -50%);
+        }
+
+        .text {
+            display: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            position: absolute;
+            top:70%;
+            left: 55%;
+            transform: translate(-30%, -50%);
+            width: 900px; /* Initially no width */
+            transition: width 0.5s ease, opacity 0.5s ease; /* Transition width and opacity */
+        }
+
+        /* Hide everything in the container and show HELLO */
+        .containerbio:hover .text {
+            display: block; /* Show HELLO when containerbio is hovered */
+        }
+
+        .image-container {
+            display: none;
+            float: left; /* Align image to the left */
+            margin-right: 900px;
+            
+        }
+
+        .image-container img {
+         width: 450px; /* Adjust the width to make the image smaller */
+
+        }
+
+        .figcaption {
+    font-size: 0.6rem; /* Adjust font size as needed */
+}
+.interbio:hover {
+    cursor: crosshair; /* Change cursor to hand on hover */
+    opacity: 1;
+}
+
+        .containerbio:hover ~ .container {
+            opacity: 0;
+        }
+
+        .interbio:hover a {
+    cursor: crosshair; /* Change cursor to hand on hover */
+    opacity: 1;
+}
+
+        
+        .container:hover .hello {
+            display: block; /* Show HELLO when containerbio is hovered */
+        }
+
+        .interbio:hover .containerbio  {
+            opacity: 0; /* Hide everything inside the containerbio */
+        }
+
+        .image-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .containerbio:hover .image-container {
+            display: block;
+        }
+
+        .containerbio:hover + .containerabout .title-english h1 {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+
+        .containerabout {
+            margin-bottom: 50px;
+        }
+    
+        .container, .containerbio {
+        text-align: center;
+        display: block;
+        margin: 20px 0; /* Add margin to space out sections */
+    }
+
+    
+
+    .bio, .text {
+        font-size: larger;
+        font-weight: bolder;
+        margin-top: 100px; /* Add margin to separate text sections */
+    }
+
+    .image-container {
+        display: block;
+        margin: 20px auto; /* Center the image */
+        width: 100%; /* Ensure it fits within the container */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Ensure the image scales down on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .figcaption {
+        font-size: 0.6rem;
+        margin-top: 10px; /* Space between image and caption */
+    }
+
+    .text {
+        display: block; /* Ensure the text is visible */
+        font-size: larger; /* Adjust font size for readability */
+        text-align: left; /* Align text for natural reading */
+        margin: 20px 0; /* Add spacing between image and text */
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove transformations */
+        width: auto; /* Allow natural width */
+        font-weight: bolder;
+        line-height: 1.3;
+    }
+
+            
+        }
+
+        
+    </style>
+</head>
+<body> 
+    
+   
+        
+      <div class="containerabout">
+        <div class="title-english">
+            <h1>Research</h1>
+        </div>
+      </div>
+    
+  <div class="container">
+        <p class="interbio">
+            <a href="Construction.html" style="text-decoration: none;">
+                <em>Construction Sites of the Social </em>(2024)
+            </a>
+        </p>
+   </div>
+
+
+   <div class="containerbio">
+    <p class="bio"><em>Those Who Define How We See Art, Possess the Power </em>(2020)</p>
+
+    <div class="image-container">
+        <div>
+            <img class="img-me" src="img/fantasy.jpg" alt="Ahmad Darkhabani">
+        </div>
+
+        <div class="figcaption"> 
+            <figure>
+                <figcaption>Ahmad Darkhabani, 2020.</figcaption>
+            </figure>
+
+    </div>
+
+    <div class="text">
+      
+      <p>This project was part of the Integral Design Studio <i>The Sublime Landscape and its 
+        Relation to Labour</i> at IZK-Institute for Contemporary Art, Faculty of Architecture,
+        Graz University of Technology. The Studio was convened by Dubravka Sekulić and Milica Tomić.
+      </p> 
+        
+        <br>
+        <pr>The research argues that the decision of what to depict in landscape painting is just as 
+          significant as what is deliberately concealed. These depictions often reflect the social, 
+          political, and cultural dynamics of the period, revealing more about the values and ideologies 
+          of the time as the visible elements convey. By examining the underlying politics and power 
+          structures that influenced these artistic decisions, we gain a deeper understanding of the 
+          historical realities and social conditions that shaped the contexts in which these paintings 
+          were commissioned. This approach highlights the dual role of landscape painting as both an 
+          artistic expression and a historical document, offering critical insights into the narratives 
+          and perspectives that were prioritized or marginalized within a given context.
+        </pr>
+    
+ 
+
+</body>
+</html>
