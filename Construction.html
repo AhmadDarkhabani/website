@@ -247,21 +247,22 @@
         width: auto; /* Increase width for wider appearance */
         font-size: 1.2rem; /* Increase font size for better readability */
         line-height: 1.8; /* Increase line height for better spacing */
+        float: none;
     }
+  
 
-    .image-container, 
-    .image-container2, 
-    .image-container3, 
-    .image-container4, 
-    .image-container5, 
-    .image-container6, 
-    .image-container7, 
-    .image-container8 {
-        width: 100%; /* Make each container take full width */
-        margin: 10px 0; /* Add some space between sections */
-        float: none; /* Disable floating for mobile */
+    .image-container img, 
+    .image-container2 img, 
+    .image-container3 img, 
+    .image-container4 img, 
+    .image-container5 img, 
+    .image-container6 img, 
+    .image-container7 img, 
+    .image-container8 img {
+        width: 100%; /* Ensure the image takes up the full width */
+        height: auto; /* Maintain aspect ratio */
+        float: none; /* Ensure no floating */
     }
-
     .image-container, 
     .image-container2, 
     .image-container3, 
@@ -279,7 +280,7 @@
     }
 
     .image-container img {
-        transform: scale(2.5); /* Zoom the container */
+        transform: scale(2.7); /* Zoom the container */
         transform-origin: center center; /* Ensure the zoom is centered */
         overflow: hidden; /* Hide any overflowed image parts */
         width: 100%; /* Ensure the image takes up the full width */
@@ -298,16 +299,16 @@
         float: none; /* Ensure no floating */
     }
 
+    .head {
+        margin-top: 500px;
+    }
+
     .figcaption, 
     .figcaption2, 
     .figcaption3, 
     .figcaption4, 
     .figcaption5 {
         text-align: left; /* Center align captions for better readability */
-    }
-
-    .head {
-    margin-top: 500px;
     }
 }
 
@@ -518,4 +519,3 @@
 
 </body>
 </html>
-
